@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" id="favicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function updateFavicon() {
+        const darkModeMatch = window.matchMedia('(prefers-color-scheme: dark)');
+        const favicon = document.getElementById('favicon');
+        favicon.href = darkModeMatch.matches ? '/icon.png' : '/iconblue.png';
+        
+        // Listen for changes in color scheme
+        darkModeMatch.addEventListener('change', (e) => {
+          favicon.href = e.matches ? '/icon.png' : '/iconblue.png';
+        });
+      }
+      // Initial call
+      updateFavicon();
+    </script>
+    <meta name="description" content="Nuevo álbum - Disponible ahora en todas las plataformas de streaming" />
+    <title>AЯT - Out Now</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
