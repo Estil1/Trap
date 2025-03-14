@@ -156,7 +156,15 @@ function App() {
       </main>
 
       <footer className="footer">
-        <a href="privacy" target="_blank" rel="noopener noreferrer" className="footer-link">Política de Privacidad</a>
+        <div className="footer-links">
+          <div className="footer-top">
+            <a href="privacy" target="_blank" rel="noopener noreferrer" className="footer-link">Política de Privacidad</a>
+          </div>
+          <div className="footer-bottom">
+            <span className="footer-text">Made with love by </span>
+            <a href="https://www.instagram.com/luisitopr01" target="_blank" rel="noopener noreferrer" className="footer-link">Luisitopr01</a>
+          </div>
+        </div>
       </footer>
     </div>
     </>
