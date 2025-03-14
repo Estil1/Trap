@@ -448,7 +448,35 @@
     font-size: 1.3rem;
   }
 
-  .bg-element {
-    transform: scale(0.8);
+  .bg-element,
+  .loading-screen .bg-element {
+    transform: scale(0.6);
   }
+
+  /* Adjust positions for mobile */
+  .bg-bigoblin-1, .loading-bigoblin-1 { top: 70%; }
+  .bg-bigoblin-2, .loading-bigoblin-2 { bottom: 40%; }
+  .bg-bigoblin-3, .loading-bigoblin-3 { top: 30%; }
+
+  .bg-corazones-0, .loading-corazones-0 { right: 5%; }
+  .bg-corazones-2, .loading-corazones-2 { top: 65%; }
+  .bg-corazones-3, .loading-corazones-3 { top: 25%; }
+
+  .bg-cruz-1, .loading-cruz-1 { bottom: 35%; }
+  .bg-cruz-2, .loading-cruz-2 { bottom: 25%; }
+
+  .bg-estrella2-0, .loading-estrella2-0 { top: 45%; right: 10%; }
+  .bg-estrella2-2, .loading-estrella2-2 { bottom: 30%; }
+
+  .bg-smile-1, .loading-smile-1 { bottom: 30%; }
+  .bg-smile-2, .loading-smile-2 { top: 35%; }
+
+  .bg-star-0, .loading-star-0 { bottom: 45%; }
+  .bg-star-2, .loading-star-2 { top: 65%; }
+
+  .bg-vacaderecha-0, .loading-vacaderecha-0 { bottom: 20%; }
+  .bg-vacaderecha-2, .loading-vacaderecha-2 { top: 15%; }
+
+  .bg-vacaezquina-1, .loading-vacaezquina-1 { top: 40%; }
+  .bg-vacaezquina-2, .loading-vacaezquina-2 { bottom: 35%; }
 }
