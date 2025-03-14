@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -62,25 +62,22 @@ function App() {
         <div className="streaming-section">
           <h3 className="section-title"></h3>
           <div className="streaming-platforms">
-            <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://open.spotify.com/prerelease/4BZmdFJxc4sxUmnCtqgjtq?si=_X-0BQM7RK-2SxOt6f5hlA" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Spotify_Full_Logo_RGB_White.png" alt="Spotify" className="platform-logo" />
             </a>
-            <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://music.apple.com/us/album/aЯt-ep/1802222655" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Apple_Music_logo.svg" alt="Apple Music" className="platform-logo" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://www.youtube.com/watch?v=O6OjFeAwN1c&list=OLAK5uy_kfOsSyxZU4i807eeda3BAqhylGvAPkHCk" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Youtube.webp" alt="YouTube" className="platform-logo" />
             </a>
-            <a href="https://music.amazon.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://music.amazon.com/albums/B0F1C3LNF3" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Amazon_Music_Cyan.png" alt="Amazon Music" className="platform-logo" />
             </a>
-            <a href="https://www.deezer.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://www.deezer.com/mx/album/726528241" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Deezer_logo_2019.svg" alt="Deezer" className="platform-logo" />
             </a>
-            <a href="https://www.pandora.com" target="_blank" rel="noopener noreferrer" className="platform-link">
-              <img src="/Pandora_wordmark.svg" alt="Pandora" className="platform-logo" />
-            </a>
-            <a href="https://tidal.com" target="_blank" rel="noopener noreferrer" className="platform-link">
+            <a href="https://tidal.com/browse/album/423606934" target="_blank" rel="noopener noreferrer" className="platform-link">
               <img src="/Tidal_(service)_logo.svg" alt="Tidal" className="platform-logo" />
             </a>
           </div>
