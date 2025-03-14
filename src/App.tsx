@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Newsletter from './Newsletter';
 
 function App() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -153,6 +154,8 @@ function App() {
             </a>
           </div>
         </div>
+
+        <Newsletter />
       </main>
 
       <footer className="footer">
