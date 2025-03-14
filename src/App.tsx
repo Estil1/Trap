@@ -3,16 +3,26 @@ import './App.css';
 
 function App() {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [audio] = useState(new Audio('/Otra.wav'));
+  const [hasInteracted, setHasInteracted] = useState(false);
 
-  useEffect(() => {
-    const audio = new Audio('/Otra.wav');
-    audio.play().catch(error => console.log("Audio autoplay failed:", error));
-  }, []);
+  const playAudio = () => {
+    if (!hasInteracted) {
+      audio.play().catch(error => console.log("Audio playback failed:", error));
+      setHasInteracted(true);
+    }
+  };
 
   const handleTouch = (event: React.TouchEvent) => {
     const container = event.currentTarget;
     container.classList.toggle('touched');
     setIsFlipped(prev => !prev);
+    playAudio();
+  };
+
+  const handleMouseEnter = () => {
+    setIsFlipped(true);
+    playAudio();
   };
 
   return (
@@ -38,7 +48,7 @@ function App() {
         <div className="album-container" onTouchStart={handleTouch}>
           <div 
             className="album-cover-inner"
-            onMouseEnter={() => setIsFlipped(true)}
+            onMouseEnter={handleMouseEnter}
             onMouseLeave={() => setIsFlipped(false)}>
             <div className="album-cover-front">
               <img src="/Albumcover.jpg" alt="Album Cover Front" className="album-cover" />
