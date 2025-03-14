@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'VLAVOUR';
-  src: url('VLAVOUR.ttf') format('truetype');
+  src: url('/VLAVOUR.ttf') format('truetype');
 }
 
 * {
@@ -280,10 +280,18 @@
 }
 
 .privacy-section p {
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: 'VLAVOUR', Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
   opacity: 0.9;
+}
+
+.privacy-section h2 {
+  font-family: 'VLAVOUR', sans-serif;
+}
+
+.privacy-title {
+  font-family: 'VLAVOUR', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -320,7 +328,51 @@
     font-size: 1.3rem;
   }
 
+  /* Adjust background elements for mobile */
   .bg-element {
-    transform: scale(0.8);
+    transform: scale(0.6);
+  }
+
+  /* Hide some background elements on mobile to reduce crowding */
+  .bg-bigoblin-2, .bg-bigoblin-3,
+  .bg-corazones-2, .bg-corazones-3,
+  .bg-cruz-2, .bg-cruz-3,
+  .bg-estrella2-2, .bg-estrella2-3,
+  .bg-smile-2, .bg-smile-3,
+  .bg-star-2, .bg-star-3,
+  .bg-vacaderecha-2, .bg-vacaderecha-3,
+  .bg-vacaezquina-2, .bg-vacaezquina-3 {
+    display: none;
+  }
+
+  /* Adjust spacing for remaining elements */
+  .bg-bigoblin-0 { top: 10%; right: 15%; }
+  .bg-bigoblin-1 { bottom: 20%; left: 20%; }
+  
+  .bg-corazones-0 { top: 15%; left: 10%; }
+  .bg-corazones-1 { bottom: 25%; right: 25%; }
+  
+  .bg-cruz-0 { top: 30%; right: 20%; }
+  .bg-cruz-1 { bottom: 15%; left: 15%; }
+  
+  .bg-estrella2-0 { top: 20%; left: 25%; }
+  .bg-estrella2-1 { bottom: 30%; right: 10%; }
+  
+  .bg-smile-0 { top: 25%; right: 30%; }
+  .bg-smile-1 { bottom: 10%; left: 30%; }
+  
+  .bg-star-0 { top: 35%; left: 35%; }
+  .bg-star-1 { bottom: 35%; right: 35%; }
+  
+  .bg-vacaderecha-0 { top: 40%; right: 5%; }
+  .bg-vacaderecha-1 { bottom: 40%; left: 5%; }
+  
+  .bg-vacaezquina-0 { top: 45%; left: 40%; }
+  .bg-vacaezquina-1 { bottom: 45%; right: 40%; }
+
+  /* Add active state for platform links on mobile */
+  .platform-link:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
   }
 }
