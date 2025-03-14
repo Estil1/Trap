@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Trap" },
+    { "source": "/Trap", "destination": "/index.html" },
+    { "source": "/Trap/:path*", "destination": "/index.html" }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "status": 308,
+      "headers": { "Location": "/Trap" }
+    },
+    { "handle": "filesystem" },
+    { "src": "/Trap/(.*)", "dest": "/index.html" }
+  ]
+}
